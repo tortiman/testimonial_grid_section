@@ -1,0 +1,81 @@
+:root{
+--PurplePrimary50: hsl(260, 100%, 95%);
+--PurplePrimary300: hsl(264, 82%, 80%);
+--PurplePrimary500: hsl(263, 55%, 52%);
+
+--WhiteNeutral: hsl(0, 0%, 100%);
+--GreyNeutral100: hsl(214, 17%, 92%);
+--GreyNeutral200: hsl(0, 0%, 81%);
+--GreyNeutral400: hsl(224, 10%, 45%);
+--GreyNeutral500: hsl(217, 19%, 35%);
+--DarkNeutralblue: hsl(219, 29%, 14%);
+--BlackNeutral: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed';
+    flex-direction: column;
+
+}
+
+.main{
+    width: 1440px;
+    height: 1029px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.daniel{
+    background-color: var(--PurplePrimary500);
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+}
+
+.jonathan{
+    background-color: var(--GreyNeutral500);
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
+}
+
+.kira{
+    background-color: var(--WhiteNeutral);
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+.jeannete{
+    background-color: var(--WhiteNeutral);
+    grid-column: 1 / 2;
+    grid-row:  2 / 2;
+}
+
+.patrick{
+    background-color: var(--BlackNeutral);
+    grid-column: 2 / 4;
+    grid-row: 2 / 2;
+}
+
