@@ -186,3 +186,30 @@ body{
     color: var(--GreyNeutral200);
 }
 
+/* diseño para mobiles */
+
+@media (width<700px) {
+    .main{
+        height: auto;
+    }
+    .container{
+        margin-top: 1000px;
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+
+    .daniel,
+    .jonathan,
+    .kira,
+    .jeannete,
+    .patrick{
+        grid-column: auto;
+        grid-row: auto;
+        width: 350px;
+        justify-self: center;
+    }
+
+    
+
+
+}
