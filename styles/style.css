@@ -34,48 +34,112 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: var(--GreyNeutral100);
 }
 
 .container{
-    background-color: aqua;
+    background-color: var(--GreyNeutral100);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 80%;
-    height: 70%;
+    height: 62%;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
+    
 }
 
 .daniel{
     background-color: var(--PurplePrimary500);
     grid-column: 1 / 3;
     grid-row: 1 / 1;
+    color: var(--WhiteNeutral);
+    /* padding: 30px; */
+    border-radius: 10px;
+    position: relative;
+}
+
+.quote{
+    position: absolute;
+    transform: translateX(400px);
 }
 
 .jonathan{
     background-color: var(--GreyNeutral500);
     grid-column: 3 / 4;
     grid-row: 1 / 1;
+    color: var(--WhiteNeutral);
+    border-radius: 10px;
 }
 
 .kira{
     background-color: var(--WhiteNeutral);
     grid-column: 4 / 5;
     grid-row: 1 / 3;
+    border-radius: 10px;
 }
 
 .jeannete{
     background-color: var(--WhiteNeutral);
     grid-column: 1 / 2;
     grid-row:  2 / 2;
+    border-radius: 10px;
 }
 
 .patrick{
     background-color: var(--BlackNeutral);
     grid-column: 2 / 4;
     grid-row: 2 / 2;
+    color: var(--WhiteNeutral);
+    border-radius: 10px;
 }
 
+.inside{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header-testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 4px;
+}
+
+.image{
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--PurplePrimary300);
+    border-radius: 50%;
+}
+
+.testimonial{
+    font-size: 1.3em;
+}
+
+.name{
+    font-size: .9em;
+}
+
+
+.title{
+    font-size: 0.7em;
+}
+
+.description{
+    font-size: 0.9em;
+    line-height: 1.4;
+}
