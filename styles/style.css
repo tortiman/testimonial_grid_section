@@ -209,7 +209,9 @@ body{
         justify-self: center;
     }
 
-    
+    .quote{
+        visibility: hidden;
+    }
 
 
 }
